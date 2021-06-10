@@ -1,0 +1,19 @@
+.containerHeader {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background: var(--gray-800);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    li {
+      list-style: none;
+
+      & + li {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .tableTraces {
-  margin-top: 4rem;
-  max-height: 70vh;
+  margin-top: 2rem;
+  max-height: calc(100vh - 364px);
   overflow: auto;
 
   table {
@@ -52,3 +52,14 @@
     }
   }
 } 
+
+.sectionResults {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: var(--gray-850);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
