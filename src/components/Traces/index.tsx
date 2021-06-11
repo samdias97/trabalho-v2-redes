@@ -191,7 +191,7 @@ export function Traces() {
           </tbody>
         </table>
       </div>
-      
+
       {/* RELATÓRIO: */}
       <section className={styles.sectionResults}>
         <article><strong>Total de pacotes:</strong> {pacotes}</article>
