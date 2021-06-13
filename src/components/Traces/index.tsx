@@ -7,8 +7,8 @@ import tracesJson from './traces.json';
 import styles from './styles.module.scss';
 
 export function Traces() {
-  const historicoDi: number = 0; //100
-  const historicoVi: number = 0; //15
+  // const historicoDi: number = 0;
+  // const historicoVi: number = 0;
   const diDelayNaRede: number[] = [];
   const diAtrasoEstimadoMedio: number[] = [];
   const viVariacaoPontual: number[] = [];
@@ -38,7 +38,8 @@ export function Traces() {
     const primeiroArg = 1 - u;
 
     if (posicao === 0) {
-      const di = primeiroArg * historicoDi + u * diDelayNaRede[posicao];
+      // COMO NÃO TEM UM HISTÓRICO INICIAL, EU ASSUMI COMO O PRÓPRIO VALOR DO DELAY NA REDE:
+      const di = diDelayNaRede[posicao];
       diAtrasoEstimadoMedio.push(parseFloat(di.toFixed(2)));
 
       return parseFloat(di.toFixed(2));
@@ -75,7 +76,8 @@ export function Traces() {
     const primeiroArg = 1 - u;
   
     if (posicao === 0) {
-      const di = primeiroArg * historicoVi + u * viVariacaoPontual[posicao];
+      // COMO NÃO TEM UM HISTÓRICO INICIAL, EU ASSUMI COMO 0 (ZERO):
+      const di = 0;
       viVariacaoMedia.push(parseFloat(di.toFixed(2)));
 
       return parseFloat(di.toFixed(2));
