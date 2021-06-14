@@ -39,7 +39,7 @@ https://trabalhov2redesdecomputadores2.netlify.app/
 
 ## ⚙ Observações
 
-1º - Como a lista de traces é muito extensa, o carregamento da página tende a ser lendo. Quando executar o código ou acessar o endereço do projeto, favor aguardar até o carregamento finalizar.
+1º - Como a lista de traces é muito extensa, o carregamento da página tende a ser lento. Quando executar o código ou acessar o endereço do projeto, favor aguardar até o carregamento finalizar.
 
 2º - A lógica funcional e os comentários sobre o código estão no caminho: <code>src/components/Traces/index.tsx</code>
 
